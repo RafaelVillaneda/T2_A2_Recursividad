@@ -1,33 +1,9 @@
 import java.util.Scanner;
 class MostrarCocientesEnteros{
 	public static void mostrarCocientes(int n,int n2,int x) {
-		
-		if(n>1) {
-			if(n%x==0) {
-				System.out.println(x);
-				mostrarCocientes(n,n2, x+1);
-			}else if((x+1)<=n){
-				mostrarCocientes(n,n2, x+1);
-			}
-			if(n==1) {
-				System.out.println(n);
-			}
+		if(n>1 && n2>1) {
+			
 		}
-		
-		
-		if(n2>1) {
-			System.out.println("Divisores de: "+n2);
-			if(n%x==0) {
-				System.out.println(x);
-				mostrarCocientes(n, n2, x+1);
-			}else {
-				mostrarCocientes(n, n2, x+1);
-			}
-			if(n==1) {
-				System.out.println(n);
-			}
-		}
-		
 	}
 }
 
