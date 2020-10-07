@@ -12,20 +12,19 @@ class ConteoVocales {
 		}
 		if(existenciapoci==true) {
 			if(poci=='A'|| poci=='E'||poci=='I'||poci=='O'||poci=='U') {
-				System.out.println(poci);
+				s++;
 				suma++;
-				System.out.println(suma);
-				s=suma;
 				cantidadVocales(fra, i+1,suma);
-				return s;
+				return suma;
 			}else {
 				cantidadVocales(fra, i+1,suma);
 			}
 			
-		}else if(existenciapoci==false) {
-			return s;
+		}else {
+			System.out.println("Cantidad de vocales es de: "+suma);
+			return suma;
 		}
-		return s;
+		return suma;
 	}//calse
 }
 public class Num06_CantidadVocales {
@@ -34,7 +33,7 @@ public class Num06_CantidadVocales {
 		Scanner entrada=new Scanner(System.in);
 		System.out.println("Ingresa la frase que deseas saber su numro de vocales: ");
 		String frase=entrada.nextLine().toUpperCase();
-		System.out.println("La cantidad de vocales es de: "+ConteoVocales.cantidadVocales(frase,0,0));
+		ConteoVocales.cantidadVocales(frase,0,0);
 	}
 
 }
