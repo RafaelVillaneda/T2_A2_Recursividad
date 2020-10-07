@@ -1,9 +1,9 @@
 import java.util.Scanner;
 class ConteoVocales {
 	public static int cantidadVocales(String fra,int i,int suma) {
-		int sumV=suma;
 		boolean existenciapoci=true;
 		char poci =' ';
+		int s = 0;
 		try {
 			poci=fra.charAt(i);
 			existenciapoci=true; 		
@@ -13,16 +13,20 @@ class ConteoVocales {
 		if(existenciapoci==true) {
 			if(poci=='A'|| poci=='E'||poci=='I'||poci=='O'||poci=='U') {
 				System.out.println(poci);
-				cantidadVocales(fra, i+1,suma+1);
-				return suma+1;
+				suma++;
+				System.out.println(suma);
+				s=suma;
+				cantidadVocales(fra, i+1,suma);
+				return s;
 			}else {
 				cantidadVocales(fra, i+1,suma);
-				return suma;
 			}
+			
+		}else if(existenciapoci==false) {
+			return s;
 		}
-		return sumV;
-		
-	}
+		return s;
+	}//calse
 }
 public class Num06_CantidadVocales {
 
