@@ -10,7 +10,7 @@ class MostrarCocientesEnteros{
 			}else {
 				mostrarCocientes(n, n2, num-1);
 			}
-		}else if(num==n) {
+		}else if(num<=n) {
 			System.out.println(n2);
 		}
 	}
