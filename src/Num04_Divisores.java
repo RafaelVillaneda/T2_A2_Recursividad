@@ -22,11 +22,11 @@ class NumCocientes{
 public class Num04_Divisores {
 
 	public static void main(String[] args) {
-		System.out.println("uantos son los divisores enteros entre dos números dados");
+		System.out.println("Cuantos son los divisores enteros entre dos números dados");
 		Scanner entrada=new Scanner(System.in);
-		System.out.println("Imgrese el primer valor ");
+		System.out.println("Ingrese el primer valor ");
 		int num1=entrada.nextInt();
-		System.out.println("Imgrese el segundo  valor");
+		System.out.println("Ingrese el segundo  valor");
 		int num2=entrada.nextInt();
 		
 		NumCocientes.numeros(num1, num2, num2,0);
